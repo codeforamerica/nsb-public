@@ -22,6 +22,15 @@ section#head {
     margin: 0 auto;
     margin-top: 25px;
 }
+
+section#mast {
+    background:transparent url(../img/Clipboard-03.png) no-repeat top left;
+    width:170%;
+    margin-left: 10%;
+    float:center;
+    height:350px;
+}
+
 section#head .in {
   padding-bottom:0;
   padding-top:40px;
@@ -54,11 +63,13 @@ section#paper {
   background:#ffa;
   clear: both;
 }
+
 section#export {
   background:#eee;
 }
 .blurb {
   padding-top:10px;
+  line-height:1.4;
   width:45%; 
   min-width:350px;
   float:left;
@@ -74,10 +85,10 @@ section#export {
 
 #signup {
   background:#ffa;
-  width:40%;
+  width:35%;
   float:right;
-  margin-top:10%;
-  margin-bottom: 10%;
+  margin-top:5%;
+  margin-bottom:5%;
   height:300px;
   padding:2%;
   color:#333;
@@ -94,16 +105,23 @@ section#export {
   background:#ffa;
   color:black;
 }
+
 #process a {
-  color:#5adbff;
-  border-color:#5adbff;
+  color:#3f5c88;
+  border-color:gray;
 }
 #process h3+h2 {
   margin-top:2em;
   margin-bottom:2em;
 }
+
+#process h2 {
+    font-family: Pacifico, serif;
+    font-size:3em;
+}
   h2, h3 {
   font-size:2em;
+  width: 40%;
   font-weight:normal;
 }
 h1 {
@@ -117,9 +135,10 @@ h1 {
     font-style: italic;
 }
 #mast h1, #mast h2, #mast h3 {
-  width:40%;
+  width:0%;
   min-width:350px;
   text-align:left;
+  float: center;
 }
 #mast h3 {
   margin-top:1em;
@@ -180,6 +199,7 @@ nav a {
 section p {
   margin-bottom:1em;
   line-height:1.4;
+  float: left;
 }
 section ul {
   margin-bottom:10px;
@@ -202,4 +222,12 @@ section li {
 .navigation-link {
     display: block;
     padding: 0 10px 0 0;
+}
+
+#footer {
+    background:transparent url(../img/cfalogo-02.png) no-repeat center;
+    width:120%;
+    margin-left: 10%;
+    float:center;
+    height:350px;
 }
