@@ -134,15 +134,19 @@ section#export {
 #signup {
   background: white;
   float:right;
-  margin-top:2%;
-  margin-bottom:5%;
   padding:2%;
   color:#333;
   border-radius:10px;
 }
 
-#signup form input {
+#signup form {
   margin-bottom:10px;
+}
+
+#signup form input {
+  margin-bottom:5px;
+  font-family: 'Crete Round', serif!important;
+  
 }
 
 #signup h2 {
