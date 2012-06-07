@@ -197,6 +197,14 @@ hr {
   max-width:350px;
 }
 
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  #head {
+    background:red;
+  }
+}
+
 /* Nav */
 nav {
   background:#eee;
@@ -241,8 +249,65 @@ nav a {
 
 
 /* Footer ==================================================================*/
-#footer {
-    background:transparent url(../img/cfalogo-02.png) no-repeat center;
-    height:300px;
+#logo {
+    background:transparent url(../img/cfalogo-02.png) no-repeat left top;
+    height:250px;
+    display:block;
+    border:0px none;
+    width:55%;
+    text-indent:-9999px;
 }
 
+@media (max-width: 760px) {
+  
+  #cfa_flag {
+    display:none;
+  }
+  
+  #head {
+    margin-left:0;
+    padding:20px;
+  }
+  
+  #head h1 {
+    font-size:5em;
+  }
+  
+  #mast {
+    background:none;
+  }
+  
+  section .in {
+    padding:10px 20px;
+  }
+  
+  #signup {
+    float:none;
+    width:auto;
+    overflow:auto;
+    margin-bottom:2em;
+    text-align:left;
+    padding:15px;
+  }  
+  
+  .blurb {
+    max-width:100%;
+    float:none;
+    margin-bottom:0;
+  }
+  
+  .right {
+    padding:10px;
+    text-align:center;
+    float:none;
+    width:auto;
+    margin:0px auto;
+    border:1px dotted #ddd;
+    border-width:1px 0px;
+    background:#e7e8e9;
+  }
+  
+  #logo {
+    width:auto;
+  }
+}
