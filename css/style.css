@@ -146,12 +146,14 @@ section#export {
 #signup form input {
   margin-bottom:5px;
   font-family: 'Crete Round', serif!important;
+  font-size:13px;
   
 }
 
 #signup h2 {
     font-size:2em;
     line-height:1;
+    margin-bottom:.5em;
 }
 
 /* Paper forms */
@@ -183,8 +185,8 @@ hr {
 
 #head {
   margin-left:150px;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding:75px
 }
 
@@ -311,4 +313,44 @@ nav a {
   #logo {
     width:auto;
   }
+}
+
+/*  Banner stuff -- remove later */
+
+
+.logo{ 
+  margin: 20px auto;
+  width:450px;
+}
+.instructions{ 
+  margin: 25px auto;
+  width:450px;
+  color:#666;
+}
+.instructions h1{
+  font-weight:normal;
+  font-size:36px;
+  color:#333;
+}  
+.instructions h3{
+  color:#333;
+}
+.instructions p{ 
+  text-align:justify;
+  margin-top:35px;
+}
+.instructions blockquote{
+  font-family:courier;
+  font-size:12px;
+  font-weight:bold;
+  background:#eee;
+  width:450px;
+  padding:15px;
+  border:solid 1px #ccc;
+  clear:both;
+  margin:20px 0px 30px 5px;
+}
+
+#cfa_flag a {
+  border:0px none;
 }
