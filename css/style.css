@@ -204,13 +204,6 @@ hr {
   max-width:350px;
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (min-device-width : 320px)
-and (max-device-width : 480px) {
-  #head {
-    background:red;
-  }
-}
 
 /* Nav */
 nav {
