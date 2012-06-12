@@ -37,6 +37,10 @@ a {
   border-bottom:1px dotted #3f5c88;
 }
 
+a:hover {
+  color: #000;
+}
+
 #cfa_corner_ribbon a {
   border:0px none;
 }
