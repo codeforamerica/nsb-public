@@ -65,10 +65,10 @@ window.onload = function(){
 
         if (opts.size == "small") {
           banner_div.addEventListener("mouseover", function(event){
-              banner_div.style.top = "-100px";
+              banner_div.style.top = "-80px";
           });
           banner_div.addEventListener("mouseout", function(event){
-              banner_div.style.top = "-80px";
+              banner_div.style.top = "-100px";
           });
         }else {
           banner_div.addEventListener("mouseover", function(event){
