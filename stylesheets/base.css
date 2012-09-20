@@ -27,6 +27,12 @@
 				text-transform: uppercase;
 			}
 
+			.section-header a { 
+				color: #ea5b5d;
+				text-decoration:none;
+				border-bottom:1px dotted #ea5b5d;
+			}
+
 			.section-subheader {
 				font: 500 22px "freight-text-pro", Georgia, serif;
 				line-height: 1.4em;
