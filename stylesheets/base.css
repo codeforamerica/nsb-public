@@ -71,7 +71,7 @@
 			}
 
 				.header h1 {
-					font: 500 24px "Museo Sans Rounded", sans-serif;
+					font: 500 24px museo-sans-rounded, sans-serif;
 					float: left;
 					color: #ea5b5d;
 					text-transform: lowercase;
@@ -230,7 +230,7 @@
 								border-radius: 36px;
 								color: #fff;
 								display: block;
-								font-family: "Museo Sans Rounded";
+								font-family: museo-sans-rounded;
 								font-weight: 700;
 								line-height: 72px;
 								text-align: center;
@@ -317,7 +317,7 @@
 		}
 
 			.footer h1 {
-				font: 500 20px "Museo Sans Rounded", sans-serif;
+				font: 500 20px museo-sans-rounded, sans-serif;
 				color: #85b8c0;
 				padding-bottom: 7px;
 				text-transform: lowercase;
