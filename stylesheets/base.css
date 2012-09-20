@@ -1,0 +1,371 @@
+
+/* ----------------------------------------------------------
+   L O C A L D A T A
+---------------------------------------------------------- */
+
+	body {
+		color: #505050;
+		font: 400 15px 'Open Sans', sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	#container {
+		position: relative;
+	}
+
+		.fixer {
+			margin: 0 auto;
+			width: 940px;
+		}
+
+			.section-header {
+				color: #ea5b5d;
+				font-size: 13px;
+				font-weight: 600;
+				letter-spacing: 1px;
+				margin-bottom: 1.1em;
+				text-transform: uppercase;
+			}
+
+			.section-subheader {
+				font: 500 22px "freight-text-pro", Georgia, serif;
+				line-height: 1.4em;
+				margin-bottom: 1.6em;
+			}
+
+			.section p {
+				line-height: 1.667;
+				margin-bottom: 1em;
+			}
+
+			.section p:last-child {
+				margin: 0;
+			}
+
+			.section strong {
+				font-weight: 600;
+			}
+
+			.section p a {
+				border-bottom: 1px solid #ccc;
+				color: #333;
+				text-decoration: none;
+			}
+
+		.header {
+			border-bottom: 1px solid #aaa;
+			-webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+			-moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+			box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+			position: relative;
+			z-index: 50;
+		}
+
+			.page-home .header {
+				border-color: #abbdc0;
+			}
+
+			.header .fixer {
+				overflow: hidden;
+				padding: 25px 0;
+			}
+
+				.header h1 {
+					font: 500 24px "Museo Sans Rounded", sans-serif;
+					float: left;
+					color: #ea5b5d;
+					text-transform: lowercase;
+				}
+
+					.header h1 a {
+						color: #ea5b5d;
+						text-decoration: none;
+					}
+
+				.header .link-set {
+					float: right;
+					padding-top: 6px;
+				}
+
+					.header .link {
+						padding-left: 40px;
+						float: left;
+					}
+
+						.header .link-a {
+							color: #666;
+							text-decoration: none;
+							text-transform: uppercase;;
+							-webkit-transition: color .3s;
+							-moz-transition: color .3s;
+							transition: color .3s;
+						}
+
+							.header .link-a:hover {
+								border-bottom: 1px solid #ccc;
+								color: #333;
+							}
+
+		.hero {
+			background: #96ced8 url('../images/background-hero.png');
+			height: 350px;
+			position: relative;
+			z-index: 1;
+		}
+
+			.hero .glow {
+				background: url('../images/hero-glow.png') 50% 0;
+				position: absolute; top: 0; left: 0;
+				width: 100%; height: 100%;
+			}
+
+			.hero .fixer {
+				position: relative;
+			}
+
+			.hero .map {
+				background: url('../images/hero-map.png') 0 0;
+				position: absolute; top: 10px; left: 30px;
+				width: 507px; height: 320px;
+			}
+
+			.hero .logo {
+				background: url('../images/hero-logo.png') 0 0;
+				padding-top: 103px;
+				position: absolute; top: 130px; left: 556px;
+				overflow: hidden;
+				width: 386px; height: 0;
+			}
+
+		.edge {
+			background: url('../images/hero-edge.png') 50% 0;
+			position: absolute; bottom: 0; left: 0;
+			height: 9px; width: 100%;
+		}
+
+		.mission {
+			padding: 30px 0 55px;
+		}
+
+			.mission .fixer {
+				background: url('../images/background-mission.png') no-repeat 100% 100%;
+				padding-bottom: 20px;
+			}
+
+			.mission .text {
+				width: 460px;
+			}
+
+		.content {
+			background: #f9f9f9;
+			border-top: 1px solid #e5e5e5;
+			padding: 10px 0 50px;
+		}
+
+			.content .section {
+				border-bottom: 1px solid #e5e5e5;
+				padding: 35px 0 50px;
+			}
+
+				.content .section-data-collection {
+					overflow: hidden;
+				}
+
+					.content .section-data-collection .method {
+						float: left;
+						width: 470px;
+						position: relative;
+					}
+
+					.content .section-data-collection .method-icon {
+						background: #e9eced url('../images/icon-method-mobile.png') no-repeat 50% 50%;
+						-webkit-border-radius: 5px;
+						-moz-border-radius: 5px;
+						border-radius: 5px;
+						position: absolute; top: 5px; left: 0;
+						width: 128px; height: 128px;
+					}
+
+						.content .section-data-collection .method-scan .method-icon {
+							background-image: url('../images/icon-method-scan.png');
+						}
+
+					.content .section-data-collection .method-title {
+						color: #444;
+						font-size: 13px;
+						font-weight: 600;
+						letter-spacing: 1px;
+						position: absolute; top: 145px; left: 0;
+						text-align: center;
+						text-transform: uppercase;
+						width: 128px;
+					}
+
+					.content .section-data-collection .method-description {
+						padding-left: 160px;
+						width: 270px;
+					}
+
+				.content .section-data-management {
+					position: relative;
+				}
+
+					.content .section-data-management .text {
+						width: 500px;
+					}
+
+					.content .section-data-management .format-set {
+						position: absolute; top: 84px; right: 60px;
+					}
+
+						.content .section-data-management .format {
+							float: left;
+							padding-left: 16px;
+						}
+
+							.content .section-data-management .format b {
+								background: #333;
+								-webkit-border-radius: 36px;
+								-moz-border-radius: 36px;
+								border-radius: 36px;
+								color: #fff;
+								display: block;
+								font-family: "Museo Sans Rounded";
+								font-weight: 700;
+								line-height: 72px;
+								text-align: center;
+								width: 72px; height: 72px;
+							}
+
+							.content .section-data-management .format-geojson b {
+								font-size: 12px;
+							}
+
+				.content .section-survey-builder {
+					border: 0;
+				}
+
+				.content .team-photo {
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+					display: block;
+					float: left;
+					position: relative; top: 5px;
+					margin: 0 20px 5px 0;
+				}
+
+		.email-signup {
+			background: #e7ebec;
+			border: 1px solid #d7e1e4;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			font-size: 13px;
+			padding: 15px;
+		}
+
+		.email-signup .form {
+			float: right;
+			overflow: hidden;
+			position: relative; top: -5px;
+		}
+
+			.email-signup .input {
+				background: #fff;
+				border: 1px solid #d7e1e4;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				float: left;
+				margin-right: 10px;
+				width: 200px;
+				padding: 2px 4px;
+			}
+
+				.email-signup input {
+					border: 0;
+					color: #404040;
+					font: 13px "Open Sans", sans-serif;
+					outline: 0;
+				}
+
+				.email-signup input::-webkit-input-placeholder,
+				.email-signup input:-moz-placeholder {
+					color: #bebebe;
+				}
+
+			.email-signup .input-submit {
+				background: #bac7ca;
+				border: 0;
+				-webkit-border-radius: 14px;
+				-moz-border-radius: 14px;
+				border-radius: 14px;
+				color: #6b7274;
+				outline: 0;
+				height: 29px;
+				padding: 0 15px;
+			}
+
+		.footer {
+			background: #fff;
+			border-top: 1px solid #c5c5c5;
+			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+			-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+			padding: 30px 0 35px;
+		}
+
+			.footer h1 {
+				font: 500 20px "Museo Sans Rounded", sans-serif;
+				color: #85b8c0;
+				padding-bottom: 7px;
+				text-transform: lowercase;
+			}
+
+			.footer p {
+				color: #999;
+				font-size: 13px;
+			}
+
+				.footer p a {
+					color: #888;
+					text-decoration: none;
+				}
+
+				.footer p a:hover {
+					color: #666;
+					border-bottom: 1px solid #ddd;
+				}
+
+			.footer .link-set {
+				border-top: 1px solid #e5e5e5;
+				margin-top: 30px;
+				overflow: hidden;
+			}
+
+				.footer .link {
+					float: left;
+					padding-right: 25px;
+				}
+
+				.footer .link-right {
+					float: right;
+					padding-right: 0;
+					padding-left: 25px;
+				}
+
+				.footer .link-a {
+					color: #666;
+					font-size: 10px;
+					text-decoration: none;
+					text-transform: uppercase;;
+					-webkit-transition: color .3s;
+					-moz-transition: color .3s;
+					transition: color .3s;
+				}
+
+				.footer .link-a:hover {
+					color: #555;
+					border-bottom: 1px solid #999;
+				}

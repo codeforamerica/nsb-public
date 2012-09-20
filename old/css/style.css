@@ -1,0 +1,353 @@
+/* Basic styles ============================================================*/
+* {
+  margin:0;
+  padding:0;
+  font-size:16px;
+}
+body { 
+  background:#fff;
+  font-size:1;
+  line-height:1;
+  font-family: 'Crete Round', serif;
+  color: #333;
+}
+
+h1 {
+  font-size:5em;
+  color: #3f5c88;
+  padding-bottom:30px;
+}
+
+h2, h3 {
+  font-size:2em;
+  font-weight:normal;
+}
+
+h2 {
+  font-size:1.5em;
+}
+
+h3 {
+  font-size:1.5em;
+}
+
+a {
+  color:#3f5c88;
+  text-decoration:none;
+  border-bottom:1px dotted #3f5c88;
+}
+
+a:hover {
+  color: #000;
+}
+
+#cfa_corner_ribbon a {
+  border:0px none;
+}
+
+
+/* Skeleton ================================================================*/
+section .in,
+section#mast {
+  max-width:960px;
+  margin: 0 auto;
+}
+
+section .in {
+  padding:25px 20px 25px 20px;   
+  overflow:auto;
+}
+
+section p {
+  margin-bottom:1em;
+  line-height:1.4;
+  float: left;
+}
+section ul {
+  margin-bottom:10px;
+}
+section li {
+  margin:0px 0px 10px 10px;
+}
+
+.navigation-list {
+    overflow: hidden;
+}
+
+section#head .in {
+  overflow:hidden;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.left h2 {
+  padding: 0 !important;
+  margin: 0 0 20px 0px; 
+  clear: both;
+}
+
+.blurb { 
+  padding-top:10px;
+  line-height:1.4;
+  max-width:60%;
+  min-width:350px;
+  overflow:auto;
+  float:left;
+}
+
+.blurb h2 { 
+  margin-bottom:.5em;
+}
+
+.right {
+    padding-top:0px;
+    width: 30%;
+    float: right;
+}
+
+/* Specific sections =======================================================*/
+
+section#mobile .in {
+}
+
+section#paper { 
+  background:#fff; /* #faf6ad;*/
+  clear: both;
+}
+
+section#paper .in {
+   ppadding-top:50px;
+   ppadding-bottom:50px;
+}
+
+section#mobile {
+    margin: 0 auto 0 0;
+}
+section#export {
+  background:#fff;
+}
+
+#intro .blurb {
+  padding-bottom:40px;
+  border-bottom:4px dotted #ddd;
+}
+
+#signup {
+  background: white;
+  float:right;
+  padding:2%;
+  color:#333;
+  border-radius:10px;
+}
+
+#signup form {
+  margin-bottom:10px;
+}
+
+#signup form input {
+  margin-bottom:5px;
+  font-family: 'Crete Round', serif!important;
+  font-size:13px;
+  
+}
+
+#signup h2 {
+    font-size:2em;
+    line-height:1;
+    margin-bottom:.5em;
+}
+
+/* Paper forms */
+#roadmap {
+  background:#faf6ad;
+  color:black;
+}
+
+
+hr {
+  border:0;
+  border-bottom:1px dotted #aaa;
+  margin:20px 0;
+}
+
+/* Navigation & Masthead ===================================================*/
+/* Masthead */
+#mast {
+  background:transparent url(../img/newclipboard.png) no-repeat left center;
+}
+
+#mast h1, #mast h2, #mast h3 {
+  min-width:350px;
+}
+
+#mast h3 {
+  margin-top:1em;
+}
+
+#head {
+  margin-left:150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding:75px
+}
+
+#head h1 { 
+  font-family:Pacifico, cursive;
+  font-weight:normal;
+  font-size:7em;
+}
+
+#head h2 {
+  max-width:350px;
+}
+
+
+/* Nav */
+nav {
+  background:#eee;
+  overflow:auto;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  font-weight:normal;
+  clear:both;
+}
+nav ul, nav li {
+  list-style:none;
+  text-indent:0;
+}
+nav ul {
+  overflow:auto;
+  text-align:center;
+  max-width:960px;
+  margin:0px;
+}
+nav li {
+  display:inline;
+}
+nav a {
+  padding:20px 20px;
+  border:0;
+}
+
+.navigation-link {
+    font-size:1.5em;
+}
+.navigation-item {
+    display: block;
+    float: left;
+    margin: 5px 20px 5px 0;
+    text-align: left;
+}
+
+.navigation-link {
+    display: block;
+    padding: 0 10px 0 0;
+}
+
+
+/* Footer ==================================================================*/
+#logo {
+    background:transparent url(../img/cfalogo-02.png) no-repeat left top;
+    height:250px;
+    display:block;
+    border:0px none;
+    width:55%;
+    text-indent:-9999px;
+}
+
+@media (max-width: 760px) {
+  
+  #cfa_flag {
+    display:none;
+  }
+  
+  #head {
+    margin-left:0;
+    padding:20px;
+  }
+  
+  #head h1 {
+    font-size:5em;
+  }
+  
+  #mast {
+    background:none;
+  }
+  
+  section .in {
+    padding:10px 20px;
+  }
+  
+  #signup {
+    float:none;
+    width:auto;
+    overflow:auto;
+    margin-bottom:2em;
+    text-align:left;
+    padding:15px;
+  }  
+  
+  .blurb {
+    max-width:100%;
+    float:none;
+    margin-bottom:0;
+  }
+  
+  .right {
+    padding:10px;
+    text-align:center;
+    float:none;
+    width:auto;
+    margin:0px auto;
+    border:1px dotted #ddd;
+    border-width:1px 0px;
+    background:#e7e8e9;
+  }
+  
+  #logo {
+    width:auto;
+  }
+}
+
+/*  Banner stuff -- remove later */
+
+
+.logo{ 
+  margin: 20px auto;
+  width:450px;
+}
+.instructions{ 
+  margin: 25px auto;
+  width:450px;
+  color:#666;
+}
+.instructions h1{
+  font-weight:normal;
+  font-size:36px;
+  color:#333;
+}  
+.instructions h3{
+  color:#333;
+}
+.instructions p{ 
+  text-align:justify;
+  margin-top:35px;
+}
+.instructions blockquote{
+  font-family:courier;
+  font-size:12px;
+  font-weight:bold;
+  background:#eee;
+  width:450px;
+  padding:15px;
+  border:solid 1px #ccc;
+  clear:both;
+  margin:20px 0px 30px 5px;
+}
+
+#cfa_flag a {
+  border:0px none;
+}
