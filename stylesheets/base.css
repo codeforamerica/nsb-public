@@ -4,7 +4,7 @@
 ---------------------------------------------------------- */
 
 	body {
-		color: #505050;
+		color: #434343;
 		font: 400 15px 'Open Sans', sans-serif;
 		-webkit-font-smoothing: antialiased;
 	}
@@ -271,11 +271,20 @@
 			padding: 15px;
 		}
 
-		.email-signup .form {
-			float: right;
+		.deactivated-email-signup .form {
+			ffloat: right;
 			overflow: hidden;
-			position: relative; top: -5px;
+			pposition: relative; 
+			ttop: -5px;
 		}
+
+		.email-signup .form {
+			margin-top:10px;
+		}
+
+			.email-signup a {
+				color: #434343;
+			}
 
 			.email-signup .input {
 				background: #fff;
