@@ -22,7 +22,8 @@
     _kms('//i.kissmetrics.com/i.js');
     _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
     </script>
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
 	<div id="container" class="page-home">
@@ -72,18 +73,130 @@
 		<div class="content">
 			<div class="fixer">
 				<div class="email-signup">
-					Want to know more about LocalData before our launch? Subscribe for updates
-					or contact us at <a href="mailto:info@localdata.com">info@localdata.com</a>:<br />
+          Want to know more about LocalData? Subscribe for updates or contact
+          us at <a href="mailto:info@localdata.com">info@localdata.com</a>:<br
+          />
 					<div class="form">
-						<form action="http://localdata.createsend.com/t/j/s/tjiljr/" method="post" id="subForm">
-							<div class="input">
-								<input type="text" name="cm-name" id="name" placeholder="Your name" />
-							</div>
-							<div class="input">
-								<input type="email" name="cm-tjiljr-tjiljr" id="tjiljr-tjiljr" placeholder="Your email" />							
-							</div>
-							<input type="submit" value="Subscribe" class="input-submit" />
+						<form id="subForm">
+              <div class="input">
+                <input type="text" name="cm-name" id="form-name" placeholder="Your name" />
+              </div>
+              <div class="input">
+                <input type="email" name="cm-tjiljr-tjiljr" id="form-email" placeholder="Your email" />
+              </div>
+
+              <br style="clear: both;display: none;" id="form-depth-sep"/>
+
+              <div id="form-depth">
+
+                <div class="multi">
+                  <div>How did you hear about LocalData?</div>
+                  <div>
+                    <input type="radio" name="source" id="source-0" value="personal reference" />
+                    <label for="source-0">Friend/colleague</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="source" id="source-1" value="article" />
+                    <label for="source-1">Article/blog post</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="source" id="source-2" value="search" />
+                    <label for="source-2">Internet search</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="source" id="source-3" value="" />
+                    <label for="source-3">Other: </label>
+                    <input type="text" id="source-other" placeholder="Please specify" />
+                  </div>
+                </div>
+
+                <div class="multi">
+                  <div>What type of work do you do?</div>
+                  <div>
+                    <input type="radio" name="work" id="work-0" value="urban planning" />
+                    <label for="work-0">Urban planning</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="work" id="work-1" value="community development" />
+                    <label for="work-1">Community development</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="work" id="work-2" value="public health" />
+                    <label for="work-2">Public health</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="work" id="work-3" value="environmental" />
+                    <label for="work-3">Environmental impact</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="work" id="work-4" value="outreach" />
+                    <label for="work-4">Outreach</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="work" id="work-5" value="" />
+                    <label for="work-5">Other: </label>
+                    <input type="text" id="work-other" placeholder="Please specify" />
+                  </div>
+                </div>
+
+                <div class="multi">
+                  <div>What type of organization do you work for?</div>
+                  <div>
+                    <input type="radio" name="org" id="org-0" value="government" />
+                    <label for="org-0">Government</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="org" id="org-1" value="cdc" />
+                    <label for="org-1">Community Development Corporation</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="org" id="org-2" value="tap" />
+                    <label for="org-2">Technical assistance provider</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="org" id="org-3" value="research" />
+                    <label for="org-3">Research group</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="org" id="org-4" value="school" />
+                    <label for="org-4">Other academic</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="org" id="org-5" value="" />
+                    <label for="org-5">Other: </label>
+                    <input type="text" id="org-other" placeholder="Please specify" />
+                  </div>
+                </div>
+
+                <div class="multi">
+                  <div>When do you plan to collect place-based data?</div>
+                  <div>
+                    <input type="radio" name="when" id="when-0" value="3" />
+                    <label for="when-0">In the next 3 months</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="when" id="when-1" value="6" />
+                    <label for="when-1">3 - 6 months</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="when" id="when-2" value="12" />
+                    <label for="when-2">In the next year</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="when" id="when-3" value="unknown" />
+                    <label for="when-3">Longer/unknown</label>
+                  </div>
+                </div>
+
+              </div>
+
+							<input type="submit" value="Subscribe" class="input-submit" id="form-submit" />
 						</form>
+
+						<form style="display:none;" action="http://localdata.createsend.com/t/j/s/tjiljr/" method="post" id="hidden-form">
+								<input type="text" name="cm-name" id="hidden-name" placeholder="Your name" />
+								<input type="email" name="cm-tjiljr-tjiljr" id="hidden-email" placeholder="Your email" />
+            </form>
 					</div>
 				</div>
 
