@@ -322,6 +322,18 @@
 				padding: 0 15px;
 			}
 
+			.email-signup .multi {
+        float: none;
+        display: block;
+        width: 400px;
+				padding: 2px 4px;
+        margin-bottom: 10px;
+      }
+
+      #form-depth {
+        display: none;
+      }
+
 		.footer {
 			background: #fff;
 			border-top: 1px solid #c5c5c5;
