@@ -267,7 +267,6 @@
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
 			border-radius: 5px;
-			font-size: 13px;
 			padding: 15px;
 		}
 
@@ -284,6 +283,10 @@
 
 			.email-signup a {
 				color: #434343;
+			}
+
+			.email-signup label {
+				cursor: pointer;
 			}
 
 			.email-signup .input {
@@ -310,29 +313,39 @@
 					color: #bebebe;
 				}
 
-			.email-signup .input-submit {
-				background: #bac7ca;
-				border: 0;
-				-webkit-border-radius: 14px;
-				-moz-border-radius: 14px;
-				border-radius: 14px;
-				color: #6b7274;
-				outline: 0;
-				height: 29px;
-				padding: 0 15px;
+				.email-signup .input-submit {
+					background: #bac7ca;
+					border: 0;
+					-webkit-border-radius: 14px;
+					-moz-border-radius: 14px;
+					border-radius: 14px;
+					color: #6b7274;
+					outline: 0;
+					height: 29px;
+					padding: 0 15px;
+				}
+
+			.email-signup h2 {
+				margin-top:1em;
+				font-weight:600;
 			}
-
+			
 			.email-signup .multi {
-        float: none;
-        display: block;
-        width: 400px;
-				padding: 2px 4px;
-        margin-bottom: 10px;
-      }
+		        float: none;
+		        display: block;
+		        width: 400px;
+		        line-height: 1.667;
+		        margin-bottom: 1.667em;
+		    }
 
-      #form-depth {
-        display: none;
-      }
+		    	.multi p {
+		    		color: #ea5b5d;
+		    	}
+
+
+		#form-depth {
+			display: none;
+		}
 
 		.footer {
 			background: #fff;
