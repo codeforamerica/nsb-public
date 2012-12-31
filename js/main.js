@@ -12,6 +12,10 @@ $(document).ready(function () {
   $('#form-name').focus(showDepth);
   $('#form-email').focus(showDepth);
 
+  if (window.location.hash === '#interest') {
+    showDepth();
+  }
+
   // Collect and submit entries from the form.
   $('#subForm').submit(function (e) {
     e.preventDefault();
