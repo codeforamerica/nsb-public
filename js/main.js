@@ -22,6 +22,7 @@ $(document).ready(function () {
 
     // Name and email
     var data = {
+        timestamp: new Date(),
         name: $('#form-name').val(),
         email: $('#form-email').val()
     };
