@@ -2,6 +2,46 @@
 $(document).ready(function () {
   'use strict';
 
+  // Partner logo scrolling
+  var partnerScrollbox = $('#partner-scrollbox');
+  var cutoffWidth = partnerScrollbox.width();
+  function scrollArrowShow() {
+    var totalWidth = partnerScrollbox.children().toArray().reduce(function (memo, item) {
+      return memo + $(item).outerWidth();
+    }, 0);
+    var maxScroll = cutoffWidth - totalWidth;
+    var result = /(-?[0-9]*)px/.exec(partnerScrollbox.css('margin-left'));
+    var scroll;
+    if (result === null) {
+      scroll = 0;
+    } else {
+      scroll = parseInt(result[1], 10);
+    }
+    if (scroll >= 0) {
+      $('#partner-left').css({visibility: 'hidden'});
+    } else {
+      $('#partner-left').css({visibility: 'visible'});
+    }
+    if (scroll <= maxScroll) {
+      $('#partner-right').css({visibility: 'hidden'});
+    } else {
+      $('#partner-right').css({visibility: 'visible'});
+    }
+  }
+  $('#partner-left').css({visibility: 'hidden'});
+  $('#partner-left').click(function (e) {
+    e.preventDefault();
+    partnerScrollbox.animate({
+      marginLeft: '+=200px'
+    }, 'fast', scrollArrowShow);
+  });
+  $('#partner-right').click(function (e) {
+    e.preventDefault();
+    partnerScrollbox.animate({
+      marginLeft: '-=200px'
+    }, 'fast', scrollArrowShow);
+  });
+
   var formUrl = 'https://script.google.com/macros/s/AKfycbwSnzL9t1eM7Yolf0iOK35E5Rqx55r5w7F5uybDgOGMi6C_ilE/exec';
 
   function showDepth(e) {

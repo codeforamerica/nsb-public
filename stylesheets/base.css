@@ -347,6 +347,112 @@
 			display: none;
 		}
 
+    .scrollbox {
+      width: 850px;
+      overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .arrow-left {
+      width: 0; 
+      height: 0; 
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid #808080;
+      margin: 0 10px 45px 0;
+      display: inline-block;
+    }
+    .arrow-right {
+      width: 0; 
+      height: 0; 
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid #808080;
+      margin: 0 0 45px 10px;
+      display: inline-block;
+    }
+    .partner-box {
+      background: #e7ebec;
+			border-top: 1px solid #c5c5c5;
+			padding: 30px 0 35px;
+    }
+    .partner-item {
+      display: inline-block;
+      padding: 10px 20px 0 20px;
+      height: 80px;
+    }
+    img.partner-logo {
+      display: inline;
+      max-width: 300px;
+      min-width: 50px;
+      height: 60px;
+    }
+    #houston {
+      height: 80px;
+    }
+    #uchicago {
+      height: 40px;
+      padding-bottom: 20px;
+    }
+    #mapc {
+      height: 60px;
+      padding-bottom: 10px;
+    }
+    #harvard {
+      height: 40px;
+      padding-bottom: 20px;
+    }
+    #placeeconomics {
+      height: 50px;
+      padding-bottom: 15px;
+    }
+    #wayne {
+      height: 50px;
+      padding-bottom: 15px;
+    }
+    #detroit {
+      height: 80px;
+    }
+
+    .press-box {
+			background: #f9f9f9;
+			border-top: 1px solid #c5c5c5;
+			padding: 30px 0 35px;
+    }
+    .press-item {
+      float: left;
+      display: inline-block;
+      max-width: 215px;
+      min-width: 190px;
+      height: 150px;
+      margin: 10px;
+    }
+    .press-item a {
+      display: block;
+      height: 120px;
+      text-align: center;
+    }
+    img.press-logo {
+      bottom: 0;
+      display: block;
+      max-width: 200px;
+      min-width: 50px;
+      margin: auto auto 10px auto;
+      text-align: center;
+    }
+    .quote {
+      text-align: center;
+      height: 65px;
+      padding-bottom: 5px;
+    }
+
+    .footer h1 {
+      font: 500 20px museo-sans-rounded, sans-serif;
+      color: #85b8c0;
+      padding-bottom: 7px;
+      text-transform: lowercase;
+    }
+
 		.footer {
 			background: #fff;
 			border-top: 1px solid #c5c5c5;
