@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>LocalData &mdash; A digital toolkit for communities</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="//use.typekit.net/lqd6xzu.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript">
+    var _kmq = _kmq || [];
+    var _kmk = _kmk || '1f57015c5e8f46bdc07701e1aa74c6cbdf565383';
+    function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+    }
+    _kms('//i.kissmetrics.com/i.js');
+    _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/interested.js"></script>
+</head>
+<body>
+	<div id="container" class="page-team">
+		<div class="header">
+			<div class="fixer">
+				<h1><a href="/">LocalData</a></h1>
+				<ul class="link-set">
+					<li class="link">
+						<a href="about.html" class="link-a">About</a>
+					</li>
+					<!-- <li class="link">
+						<a href="press.html" class="link-a">Press</a>
+					</li> -->
+					<li class="link">
+						<a href="faq.html" class="link-a">FAQ</a>
+					</li>
+					<li class="link">
+						<a href="team.html" class="link-a">Team</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="fixer">
+        <div class="section" id="sec-form">
+					<h3 class="section-subheader">Thank you for your interest in LocalData!
+            <br />Please tell us more about your use case, and we'll give you a call!</h3>
+				<div id="interest">
+					<div class="form">
+						<form id="interested">
+              <div class="hidden req" id="req-message">Oops, you're missing some required fields.</div>
+              <br />
+              <div class="req">* Required</div>
+              <div class="single">
+                <label>Name<a class="req"> *</a></label>
+                <input type="text" name="entry.0.single" id="form-first-name" placeholder="First Name" data-required="true" />
+                <input type="text" name="entry.2.single" id="form-last-name" placeholder="Last Name" data-required="true" />
+              </div>
+              <div class="single">
+                <label>Phone number<a class="req"> *</a></label>
+                <input type="text" name="entry.22.single" id="form-phone" data-required="true" />
+              </div>
+              <div class="single">
+                <label>Title</label>
+                <input type="text" name="entry.4.single" id="form-title" />
+              </div>
+              <div class="single">
+                <label>Organization</label>
+                <input type="text" name="entry.5.single" id="form-organization" class="wide" />
+              </div>
+
+              <!-- Organization type -->
+              <div class="multi">
+                <p>What type of organization are you with?</p>
+                <div>
+                  <input type="radio" name="entry.6.group" id="org-0" value="nonprofit" />
+                  <label for="org-0">Nonprofit</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.6.group" id="org-1" value="private" />
+                  <label for="org-1">Private sector</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.6.group" id="org-2" value="government" />
+                  <label for="org-2">Government</label>
+                </div>
+              </div>
+
+              <!-- Data collection plans -->
+              <div class="multi">
+                <p>Do you plan to collect data in the near future?</p>
+                <div>
+                  <input type="checkbox" name="entry.7.group" id="soon" />
+                  <label for="soon">Yes</label>
+                </div>
+              </div>
+              <div class="hidden" data-condition="soon">
+                <div class="single">
+                  <label>When?</label>
+                  <input type="text" name="entry.9.single" id="when" class="wide" />
+                </div>
+                <div class="single">
+                  <label>Where?</label>
+                  <input type="text" name="entry.10.single" id="where" class="wide" />
+                </div>
+                <div class="single">
+                  <label>For what purpose?</label>
+                  <input type="text" name="entry.11.single" id="why" class="wide" />
+                </div>
+              </div>
+
+
+              <!-- Data collection history -->
+              <div class="multi">
+                <p>Have you conducted surveys in the past?</p>
+                <div>
+                  <input type="checkbox" name="entry.14.group" id="past" />
+                  <label for="past">Yes</label>
+                </div>
+              </div>
+              <div class="hidden" data-condition="past">
+                <div class="single">
+                  <label>For what purpose?</label>
+                  <input type="text" name="entry.16.single" id="past-why" class="wide" />
+                </div>
+                <div class="single">
+                  <label>How many times in a year?</label>
+                  <input type="text" name="entry.17.single" id="frequency" class="wide" />
+                </div>
+                <div class="single">
+                  <label>What is your average timeline (start to finish) for collecting this data?</label>
+                  <input type="text" name="entry.18.single" id="timeline" class="wide" />
+                </div>
+
+                <div class="multi">
+                  <p>What tools do you use for data collection?</p>
+                  <div>
+                    <input type="checkbox" name="entry.19.group" id="tech-0" value="paper" />
+                    <label for="tech-0">Pen and paper</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="entry.19.group" id="tech-1" value="__option__" />
+                    <label for="tech-1">Technology</label>
+                  </div>
+                  <div class="hidden" data-condition="tech-1">
+                    <label>Which products?</label>
+                    <input type="text" name="entry.19.group.other_option_" id="tech-other" />
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="multi">
+                <p>Does your team have access to smartphones or tablets</p>
+                <div>
+                  <input type="radio" name="entry.20.group" id="access-0" value="all" />
+                  <label for="access-0">Nearly everyone does</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.20.group" id="access-1" value="most" />
+                  <label for="access-1">Most do</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.20.group" id="access-2" value="few" />
+                  <label for="access-2">Few or none have access</label>
+                </div>
+              </div>
+
+              <div class="multi">
+                <p>What is the ballpark budget for projects that require data collection?</p>
+                <div>
+                  <input type="radio" name="entry.21.group" id="budget-0" value="<1000" />
+                  <label for="budget-0">Under $1,000</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.21.group" id="budget-1" value="1000-5000" />
+                  <label for="budget-1">$1,000 - $5,000</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.21.group" id="budget-2" value="5000-15000" />
+                  <label for="budget-2">$5,000 - $15,000</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.21.group" id="budget-3" value=">15000" />
+                  <label for="budget-3">greater than $15,000</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.21.group" id="budget-4" value="unknown" />
+                  <label for="budget-4">I don't know</label>
+                </div>
+              </div>
+
+              <input type="hidden" name="pageNumber" value="0" />
+              <input type="hidden" name="backupCache" value= />
+              <input type="hidden" name="submit" value="Submit" />
+              <input type="submit" value="Submit" class="input-submit" id="form-submit" />
+            </form>
+          </div>
+        </div>
+        </div>
+        <div class="hidden section" id="sec-thanks">
+          <h3>Thank you! We will get back to you shortly!</h3>
+        </div>
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="fixer">
+				<h1>LocalData</h1>
+				<p>Local data was created at <a href="http://codeforamerica.org/" target="_blank">Code for America</a> and is supported by <a href="http://www.knightfoundation.org/" target="_blank">The Knight Foundation</a>.</p>
+				<ul class="link-set">
+					<li class="link">
+						<a href="about.html" class="link-a">About</a>
+					</li>
+					<!-- <li class="link">
+						<a href="press.html" class="link-a">Press</a>
+					</li> -->
+					<li class="link">
+						<a href="faq.html" class="link-a">FAQ</a>
+					</li>
+					<li class="link">
+						<a href="team.html" class="link-a">Team</a>
+					</li>
+					<li class="link link-right">
+						<a href="https://github.com/codeforamerica/nsb-mobile" target="_blank" class="link-a">GitHub</a>
+					</li>
+					<li class="link link-right">
+						<a href="https://twitter.com/golocaldata" target="_blank" class="link-a">Twitter</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-34929479-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+</body>
+</html>
