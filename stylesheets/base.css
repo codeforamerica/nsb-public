@@ -313,6 +313,7 @@
 					color: #bebebe;
 				}
 
+        #interested .input-submit,
 				.email-signup .input-submit {
 					background: #bac7ca;
 					border: 0;
@@ -325,11 +326,13 @@
 					padding: 0 15px;
 				}
 
+      #interested h2,
 			.email-signup h2 {
 				margin-top:1em;
 				font-weight:600;
 			}
 			
+      #interested .multi,
 			.email-signup .multi {
 		        float: none;
 		        display: block;
@@ -346,6 +349,44 @@
 		#form-depth {
 			display: none;
 		}
+
+    #interested .input {
+      border: 1px solid #d7e1e4;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      width: 500px;
+      padding: 2px 4px;
+    }
+    #interested input.wide {
+      width: 300px;
+    }
+    #interested .single {
+      margin: 8px 0;
+    }
+    #interested .single label {
+      display: block;
+      padding: 2px;
+    }
+    #interested .multi label {
+      display: inline;
+      padding: 0;
+    }
+    #interested input {
+      border: 1px solid #d7e1e4;
+      padding: 3px 4px;
+      margin: 1px 10px 1px 1px;
+      margin-right: 10px;
+      color: #404040;
+      font: 13px "Open Sans", sans-serif;
+      outline: 0;
+    }
+    #interested .req {
+      color: #ea5b5d;
+    }
+    .hidden {
+      display: none;
+    }
 
     .scrollbox {
       width: 850px;
