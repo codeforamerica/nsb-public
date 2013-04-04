@@ -6,12 +6,11 @@ $(document).ready(function () {
   var path = '/a/localdata.com/spreadsheet/formResponse?formkey=dDQ5Vm02REM2dEZGalA3bnpqS1BEZmc6MQ&ifq';
   var formUrl = 'https://docs.google.com' + path;
 
-  function setToggle(id) {
+  function setCheckToggle(id) {
     var $el = $('#' + id);
     $el.change(function handleToggle(e) {
       var $sub = $('div[data-condition="' + id + '"]');
       if ($el.prop('checked')) {
-        console.log($sub);
         $sub.show(400);
       } else {
         $sub.hide(400);
@@ -19,9 +18,22 @@ $(document).ready(function () {
     });
   }
 
-  setToggle('soon');
-  setToggle('past');
-  setToggle('tech-1');
+  function setRadioToggle(id, name, yes) {
+    var $el = $('input[name="' + name + '"]');
+    $el.change(function handleToggle(e) {
+      var $checked = $('input[name="' + name + '"]:checked');
+      var $sub = $('div[data-condition="' + id + '"]');
+      if ($checked.val() === yes) {
+        $sub.show(400);
+      } else {
+        $sub.hide(400);
+      }
+    });
+  }
+
+  setRadioToggle('soon-yes', 'entry.7.group', 'yes');
+  setRadioToggle('past-yes', 'entry.14.group', 'yes');
+  setCheckToggle('tech-1');
 
   // Collect and submit entries from the form.
   $('#interested').submit(function (e) {
@@ -49,7 +61,6 @@ $(document).ready(function () {
     }
 
     var data = $(this).serialize();
-    console.log(data);
     // Record responses in the spreadsheet.
     $.ajax({
       url: formUrl,

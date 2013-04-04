@@ -51,7 +51,7 @@
 			<div class="fixer">
         <div class="section" id="sec-form">
 					<h3 class="section-subheader">Thank you for your interest in LocalData!
-            <br />Please tell us more about your use case, and we'll give you a call!</h3>
+            <br />Please tell us more about your use case, and we'll give you a call.</h3>
 				<div id="interest">
 					<div class="form">
 						<form id="interested">
@@ -97,11 +97,15 @@
               <div class="multi">
                 <p>Do you plan to collect data in the near future?</p>
                 <div>
-                  <input type="checkbox" name="entry.7.group" id="soon" />
-                  <label for="soon">Yes</label>
+                  <input type="radio" name="entry.7.group" id="soon-yes" value="yes"/>
+                  <label for="soon-yes">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.7.group" id="soon-no" value="no"/>
+                  <label for="soon-no">No</label>
                 </div>
               </div>
-              <div class="hidden" data-condition="soon">
+              <div class="hidden" data-condition="soon-yes">
                 <div class="single">
                   <label>When?</label>
                   <input type="text" name="entry.9.single" id="when" class="wide" />
@@ -121,11 +125,15 @@
               <div class="multi">
                 <p>Have you conducted surveys in the past?</p>
                 <div>
-                  <input type="checkbox" name="entry.14.group" id="past" />
-                  <label for="past">Yes</label>
+                  <input type="radio" name="entry.14.group" id="past-yes" value="yes" />
+                  <label for="past-yes">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" name="entry.14.group" id="past-no" value="no" />
+                  <label for="past-no">No</label>
                 </div>
               </div>
-              <div class="hidden" data-condition="past">
+              <div class="hidden" data-condition="past-yes">
                 <div class="single">
                   <label>For what purpose?</label>
                   <input type="text" name="entry.16.single" id="past-why" class="wide" />
@@ -206,7 +214,7 @@
         </div>
         </div>
         <div class="hidden section" id="sec-thanks">
-          <h3>Thank you! We will get back to you shortly!</h3>
+          <h3>Thank you! We will get back to you shortly.</h3>
         </div>
 
 			</div>
