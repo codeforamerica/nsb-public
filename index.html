@@ -84,125 +84,8 @@
 			              <div class="input">
 			                <input type="email" name="cm-tjiljr-tjiljr" id="form-email" placeholder="Your email" />
 			              </div>
-
-			              <br style="clear: both;display: none;" id="form-depth-sep"/>
-
-			              <div id="form-depth">
-
-			              	<h2><strong>Optional: help us make LocalData better by answering these questions</strong></h2>
-
-			                <div class="multi">
-			                  <p>What type of work do you do?</p>
-			                  <div>
-			                    <input type="radio" name="work" id="work-6" value="commercial surveying" />
-			                    <label for="work-6">Commercial data collection</label>
-			                  </div>
-
-			                  <div>
-			                    <input type="radio" name="work" id="work-0" value="urban planning" />
-			                    <label for="work-0">Urban planning</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="work" id="work-1" value="community development" />
-			                    <label for="work-1">Community development</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="work" id="work-2" value="public health" />
-			                    <label for="work-2">Public health</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="work" id="work-3" value="environmental" />
-			                    <label for="work-3">Environmental impact</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="work" id="work-4" value="outreach" />
-			                    <label for="work-4">Outreach</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="work" id="work-5" value="" />
-			                    <label for="work-5">Other: </label>
-			                    <input type="text" id="work-other" placeholder="Please specify" />
-			                  </div>
-			                </div>
-
-			                <div class="multi">
-			                  <p>What type of organization do you work for?</p>
-			                  <div>
-			                    <input type="radio" name="org" id="org-0" value="government" />
-			                    <label for="org-0">Government</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="org" id="org-1" value="cdc" />
-			                    <label for="org-1">Community Development Corporation</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="org" id="org-2" value="tap" />
-			                    <label for="org-2">Technical assistance provider</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="org" id="org-3" value="research" />
-			                    <label for="org-3">Research group</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="org" id="org-4" value="student" />
-			                    <label for="org-4">I'm a student</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="org" id="org-5" value="school" />
-			                    <label for="org-5">University/higher ed</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="org" id="org-6" value="activist" />
-			                    <label for="org-6">Local/independent activist</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="org" id="org-7" value="" />
-			                    <label for="org-7">Other: </label>
-			                    <input type="text" id="org-other" placeholder="Please specify" />
-			                  </div>
-			                </div>
-
-			                <div class="multi">
-			                  <p>When do you plan to collect place-based data?</p>
-			                  <div>
-			                    <input type="radio" name="when" id="when-0" value="3" />
-			                    <label for="when-0">In the next 3 months</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="when" id="when-1" value="6" />
-			                    <label for="when-1">3 - 6 months</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="when" id="when-2" value="12" />
-			                    <label for="when-2">In the next year</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="when" id="when-3" value="unknown" />
-			                    <label for="when-3">Longer/unknown</label>
-			                  </div>
-			                </div>
-
-			                <div class="multi">
-			                  <p>How did you hear about LocalData?</p>
-			                  <div>
-			                    <input type="radio" name="source" id="source-0" value="personal reference" />
-			                    <label for="source-0">Friend/colleague</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="source" id="source-1" value="article" />
-			                    <label for="source-1">Article/blog post</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="source" id="source-2" value="search" />
-			                    <label for="source-2">Internet search</label>
-			                  </div>
-			                  <div>
-			                    <input type="radio" name="source" id="source-3" value="" />
-			                    <label for="source-3">Other: </label>
-			                    <input type="text" id="source-other" placeholder="Please specify" />
-			                  </div>
-			                </div>
-
+			              <div class="input">
+			                <input type="text" name="cm-org" id="form-org" placeholder="Organization" />
 			              </div>
 
 						<input type="submit" value="Subscribe" class="input-submit" id="form-submit" />
@@ -211,6 +94,7 @@
 			<form style="display:none;" action="http://localdata.createsend.com/t/j/s/tjiljr/" method="post" id="hidden-form">
 					<input type="text" name="cm-name" id="hidden-name" placeholder="Your name" />
 					<input type="email" name="cm-tjiljr-tjiljr" id="hidden-email" placeholder="Your email" />
+					<input type="text" name="cm-f-jidjll" id="hidden-org" placeholder="Organization" />
             </form>
 					</div>
 				</div>
@@ -334,32 +218,48 @@
         <div class="press-item">
 					<div class="quote">"incredibly simple"</div>
           <a href="http://www.fastcodesign.com/1670954/localdata-an-app-that-helps-communities-do-their-own-urban-planning">
-            <img class="press-logo" src="images/fastcodesign_logo_dark_lightened.png"></img>
+            <img class="press-logo" id="fastco" src="images/fastcodesign_logo_dark_lightened.png"></img>
           </a>
         </div> <!-- /press-item -->
 
         <div class="press-item">
 					<div class="quote">"versatility and adaptability"</div>
           <a href="http://datadrivenjournalism.net/news_and_analysis/localdata_empowering_communities_and_legitimising_citizen_based_datasets">
-            <img class="press-logo" src="images/datadrivenjournalism-logo_lightened.png"></img>
+            <img class="press-logo" id="ddj" src="images/datadrivenjournalism-logo_lightened.png"></img>
           </a>
         </div> <!-- /press-item -->
 
         <div class="press-item">
 					<div class="quote">"using it as a bridge between the community and the government"</div>
           <a href="http://www.niemanlab.org/2012/10/localdata-wants-to-democratize-the-process-of-gathering-community-information/">
-            <img class="press-logo" src="images/newfront-niemanlab-biglogo2_lightened.png"></img>
+            <img class="press-logo" id="nieman" src="images/newfront-niemanlab-biglogo2_lightened.png"></img>
+          </a>
+        </div> <!-- /press-item -->
+
+        <br style="clear: both;"></br>
+
+        <div class="press-item">
+          <div class="quote">"allowing a community to easily create a survey and record results"</div>
+          <a href="http://www.planetizen.com/node/58773">
+            <img class="press-logo" id="planetizen" src="images/planetizen-logo_lightened.png"></img>
+          </a>
+        </div> <!-- /press-item -->
+
+        <div class="press-item">
+          <div class="quote">"collect and analyze [data] in more productive ways"</div>
+          <a href="http://strata.oreilly.com/2012/09/knight-news-challenge-data-winners.html">
+            <img class="press-logo" id="strata" src="images/strata-logo_lightened.png"></img>
           </a>
         </div> <!-- /press-item -->
 
         <div class="press-item">
           <div class="quote">"one of those toolkits geospatial folks should be aware of"</div>
           <a href="http://apb.directionsmag.com/entry/localdata-a-toolkit-for-geodata-collection-from-code-for-america/313921">
-            <img class="press-logo" src="images/logo-all-points2_lightened.png"></img>
+            <img class="press-logo" id="directions" src="images/logo-all-points2_lightened.png"></img>
           </a>
         </div> <!-- /press-item -->
 
-        <br style="clear: both;"></br>
+        <br style="clear: both;"/>
       </div>
     </div>
 

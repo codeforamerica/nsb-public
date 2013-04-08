@@ -64,30 +64,9 @@ $(document).ready(function () {
     var data = {
         timestamp: new Date(),
         name: $('#form-name').val(),
-        email: $('#form-email').val()
+        email: $('#form-email').val(),
+        organization: $('#form-org').val()
     };
-
-    // How did they hear about us?
-    data.source = $('input[name="source"]:checked').val();
-    // Handle the "other" case
-    if (data.source === '') {
-      data.source = $('#source-other').val();
-    }
-
-    // What type of work do they do?
-    data.work = $('input[name="work"]:checked').val();
-    if (data.work === '') {
-      data.work = $('#work-other').val();
-    }
-
-    // What type of organization?
-    data.org = $('input[name="org"]:checked').val();
-    if (data.org === '') {
-      data.org = $('#org-other').val();
-    }
-
-    // When will they collect data?
-    data.when = $('input[name="when"]:checked').val();
 
     $('#form-submit').val('Submitting...');
 
@@ -100,6 +79,7 @@ $(document).ready(function () {
       // Submit signup info to Campaign Monitor.
       $('#hidden-name').val(data.name);
       $('#hidden-email').val(data.email);
+      $('#hidden-org').val(data.organization);
       $('#hidden-form').submit();
 
       $('#form-submit').val('Subscribe');

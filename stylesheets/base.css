@@ -458,20 +458,23 @@
     .press-box {
 			background: #f9f9f9;
 			border-top: 1px solid #c5c5c5;
-			padding: 30px 0 35px;
+			padding: 30px 0 15px 0;
     }
     .press-item {
       float: left;
       display: inline-block;
-      max-width: 215px;
-      min-width: 190px;
+      width: 215px;
       height: 150px;
-      margin: 10px;
+      margin: 10px 40px;
     }
     .press-item a {
       display: block;
-      height: 120px;
       text-align: center;
+    }
+    .quote {
+      text-align: center;
+      height: 65px;
+      padding-bottom: 5px;
     }
     img.press-logo {
       bottom: 0;
@@ -480,11 +483,30 @@
       min-width: 50px;
       margin: auto auto 10px auto;
       text-align: center;
+      height: 80px;
     }
-    .quote {
-      text-align: center;
-      height: 65px;
-      padding-bottom: 5px;
+    #fastco {
+      height: 80px;
+    }
+    #ddj {
+      height: 70px;
+      padding-top: 5px;
+    }
+    #nieman {
+      height: 14px;
+      padding-top: 33px;
+    }
+    #directions {
+      height: 40px;
+      padding-top: 20px;
+    }
+    #planetizen {
+      height: 40px;
+      padding-top: 20px;
+    }
+    #strata {
+      height: 80px;
+      padding-top: 0px;
     }
 
     .footer h1 {
