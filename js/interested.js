@@ -2,6 +2,10 @@
 $(document).ready(function () {
   'use strict';
 
+  // Fill in e-mail from fragment
+  if (location.hash !== '') {
+    $('#form-email').val(decodeURIComponent(location.hash.slice(1)));
+  }
 
   var path = '/a/localdata.com/spreadsheet/formResponse?formkey=dDQ5Vm02REM2dEZGalA3bnpqS1BEZmc6MQ&ifq';
   var formUrl = 'https://docs.google.com' + path;
