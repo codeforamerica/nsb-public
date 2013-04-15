@@ -267,7 +267,6 @@
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
 			border-radius: 5px;
-			font-size: 13px;
 			padding: 15px;
 		}
 
@@ -284,6 +283,10 @@
 
 			.email-signup a {
 				color: #434343;
+			}
+
+			.email-signup label {
+				cursor: pointer;
 			}
 
 			.email-signup .input {
@@ -310,29 +313,208 @@
 					color: #bebebe;
 				}
 
-			.email-signup .input-submit {
-				background: #bac7ca;
-				border: 0;
-				-webkit-border-radius: 14px;
-				-moz-border-radius: 14px;
-				border-radius: 14px;
-				color: #6b7274;
-				outline: 0;
-				height: 29px;
-				padding: 0 15px;
+        #interested .input-submit,
+				.email-signup .input-submit {
+					background: #bac7ca;
+					border: 0;
+					-webkit-border-radius: 14px;
+					-moz-border-radius: 14px;
+					border-radius: 14px;
+					color: #6b7274;
+					outline: 0;
+					height: 29px;
+					padding: 0 15px;
+				}
+
+      #interested h2,
+			.email-signup h2 {
+				margin-top:1em;
+				font-weight:600;
 			}
-
+			
+      #interested .multi,
 			.email-signup .multi {
-        float: none;
-        display: block;
-        width: 400px;
-				padding: 2px 4px;
-        margin-bottom: 10px;
-      }
+		        float: none;
+		        display: block;
+		        width: 400px;
+		        line-height: 1.667;
+		        margin-bottom: 1.667em;
+		    }
 
-      #form-depth {
-        display: none;
-      }
+		    	.multi p {
+		    		color: #ea5b5d;
+		    	}
+
+
+		#form-depth {
+			display: none;
+		}
+
+    #interested .input {
+      border: 1px solid #d7e1e4;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      width: 500px;
+      padding: 2px 4px;
+    }
+    #interested input.wide {
+      width: 300px;
+    }
+    #interested .single {
+      margin: 8px 0;
+    }
+    #interested .single label {
+      display: block;
+      padding: 2px;
+    }
+    #interested .multi label {
+      display: inline;
+      padding: 0;
+    }
+    #interested input {
+      border: 1px solid #d7e1e4;
+      padding: 3px 4px;
+      margin: 1px 10px 1px 1px;
+      margin-right: 10px;
+      color: #404040;
+      font: 13px "Open Sans", sans-serif;
+      outline: 0;
+    }
+    #interested .req {
+      color: #ea5b5d;
+    }
+    .hidden {
+      display: none;
+    }
+
+    .scrollbox {
+      width: 850px;
+      overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .arrow-left {
+      width: 0; 
+      height: 0; 
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid #808080;
+      margin: 0 10px 45px 0;
+      display: inline-block;
+    }
+    .arrow-right {
+      width: 0; 
+      height: 0; 
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid #808080;
+      margin: 0 0 45px 10px;
+      display: inline-block;
+    }
+    .partner-box {
+      background: #e7ebec;
+			border-top: 1px solid #c5c5c5;
+			padding: 30px 0 35px;
+    }
+    .partner-item {
+      display: inline-block;
+      padding: 10px 20px 0 20px;
+      height: 80px;
+    }
+    img.partner-logo {
+      display: inline;
+      max-width: 300px;
+      min-width: 50px;
+      height: 60px;
+    }
+    #houston {
+      height: 80px;
+    }
+    #uchicago {
+      height: 40px;
+      padding-bottom: 20px;
+    }
+    #mapc {
+      height: 60px;
+      padding-bottom: 10px;
+    }
+    #harvard {
+      height: 40px;
+      padding-bottom: 20px;
+    }
+    #placeeconomics {
+      height: 50px;
+      padding-bottom: 15px;
+    }
+    #wayne {
+      height: 50px;
+      padding-bottom: 15px;
+    }
+    #detroit {
+      height: 80px;
+    }
+
+    .press-box {
+			background: #f9f9f9;
+			border-top: 1px solid #c5c5c5;
+			padding: 30px 0 15px 0;
+    }
+    .press-item {
+      float: left;
+      display: inline-block;
+      width: 215px;
+      height: 150px;
+      margin: 10px 40px;
+    }
+    .press-item a {
+      display: block;
+      text-align: center;
+    }
+    .quote {
+      text-align: center;
+      height: 65px;
+      padding-bottom: 5px;
+    }
+    img.press-logo {
+      bottom: 0;
+      display: block;
+      max-width: 200px;
+      min-width: 50px;
+      margin: auto auto 10px auto;
+      text-align: center;
+      height: 80px;
+    }
+    #fastco {
+      height: 80px;
+    }
+    #ddj {
+      height: 70px;
+      padding-top: 5px;
+    }
+    #nieman {
+      height: 14px;
+      padding-top: 33px;
+    }
+    #directions {
+      height: 40px;
+      padding-top: 20px;
+    }
+    #planetizen {
+      height: 40px;
+      padding-top: 20px;
+    }
+    #strata {
+      height: 80px;
+      padding-top: 0px;
+    }
+
+    .footer h1 {
+      font: 500 20px museo-sans-rounded, sans-serif;
+      color: #85b8c0;
+      padding-bottom: 7px;
+      text-transform: lowercase;
+    }
 
 		.footer {
 			background: #fff;
